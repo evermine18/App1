@@ -14,10 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Locating the button by ID
         Button button = (Button) findViewById(R.id.button2);
+        //Button onclick listener
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Do something in response to button click
+                // Showing a toast
                 Context context = getApplicationContext();
                 CharSequence text = "Test Toast!!";
                 int duration = Toast.LENGTH_SHORT;
